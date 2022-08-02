@@ -1,6 +1,7 @@
 
 package testscript;
 
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -46,7 +47,7 @@ public class Login extends Baseclass {
 		Loginpage.logintoPOS();
 		testcase.log(Status.PASS, " Login Successful");
 	}
-	@Test
+	@Test(enabled=false)
 	public void validloginsession() throws IOException {
  		testcase = extentreport.createTest("Login Session TestCase");
  	 PageFactory.initElements(driver, Loginpage.class);
