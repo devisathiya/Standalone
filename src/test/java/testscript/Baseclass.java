@@ -15,7 +15,7 @@ public class Baseclass extends Browsersetup {
 	public static ExtentTest testcase;
 	public static ExtentReports extentreport;
 	public static ExtentSparkReporter report;
-	
+
 	@BeforeSuite
 	public void reportSetup() {
 	
