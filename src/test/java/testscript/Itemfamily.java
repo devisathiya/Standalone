@@ -20,7 +20,6 @@ public class Itemfamily extends Baseclass{
  
 	public void itemfamilyscript() {
 		PageFactory.initElements(driver, Itemmanagement_objects.class);
-		menuname="Item Details";
 		Common_class.testobjects(menuname,submenuname);
 	System.out.println("Item family selected through common script");
 

@@ -21,7 +21,6 @@ public class Itemclass extends Baseclass {
  
 	public void itemclassscript() {
 		PageFactory.initElements(driver, Itemmanagement_objects.class);
-		menuname="Item Details";
 		Common_class.testobjects(menuname,submenuname);
 	System.out.println("Item class selected through common script");
 
