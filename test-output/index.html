@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.Itemclass" class="method navigator-link" hash-for-method="itemclassdelete">itemclassdelete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,7 +121,27 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.Itemfamily" class="method navigator-link" hash-for-method="itemFamilydelete">itemFamilydelete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.Itemfamily" class="method navigator-link" hash-for-method="itemFamilyedit">itemFamilyedit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.Itemclass" class="method navigator-link" hash-for-method="itemclassedit">itemclassedit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testscript.Itemclass" class="method navigator-link" hash-for-method="itemclassscript">itemclassscript</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.Itemfamily" class="method navigator-link" hash-for-method="itemfamilyscript">itemfamilyscript</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -127,12 +161,84 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testscript.Itemclass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="itemclassdelete">
+                  </a> <!-- itemclassdelete -->
+                  <span class="method-name">itemclassdelete</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span _ngcontent-xwo-c144=&quot;&quot; class=&quot;searchIcon&quot;&gt;...&lt;/span&gt; is not clickable at point (1014, 178). Other element would receive the click: &lt;div class=&quot;ng-tns-c14-22 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker&quot; style=&quot;z-index: 1100;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=103.0.5060.134)
+Build info: version: &apos;4.0.0-alpha-2&apos;, revision: &apos;f148142cf8&apos;, time: &apos;2019-07-01T20:55:26&apos;
+System info: host: &apos;TBS-25&apos;, ip: &apos;192.168.200.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2de39dada9de0eac0473364fc62fc48
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at pagefactory.Common_objects.search(Common_objects.java:48)
+	at testscript.Itemclass.itemclassdelete(Itemclass.java:64)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.Itemfamily</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="itemFamilydelete">
+                  </a> <!-- itemFamilydelete -->
+                  <span class="method-name">itemFamilydelete</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="itemFamilyedit">
+                  </a> <!-- itemFamilyedit -->
+                  <span class="method-name">itemFamilyedit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="itemfamilyscript">
+                  </a> <!-- itemfamilyscript -->
+                  <span class="method-name">itemfamilyscript</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">testscript.Itemclass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="itemclassedit">
+                  </a> <!-- itemclassedit -->
+                  <span class="method-name">itemclassedit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="itemclassscript">
@@ -178,6 +284,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;testscript.Login&quot;/&gt;
       &lt;class name=&quot;testscript.Itemclass&quot;/&gt;
+      &lt;class name=&quot;testscript.Itemfamily&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -191,7 +298,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -217,24 +324,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'itemclassscript')
-data.setCell(0, 2, 'testscript.Itemclass')
-data.setCell(0, 3, 48109);
+data.setCell(0, 1, 'itemfamilyscript')
+data.setCell(0, 2, 'testscript.Itemfamily')
+data.setCell(0, 3, 122397);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validlogin')
-data.setCell(1, 2, 'testscript.Login')
-data.setCell(1, 3, 479);
+data.setCell(1, 1, 'itemclassscript')
+data.setCell(1, 2, 'testscript.Itemclass')
+data.setCell(1, 3, 92306);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'browseropen')
-data.setCell(2, 2, 'testscript.Login')
-data.setCell(2, 3, 109);
+data.setCell(2, 1, 'itemFamilyedit')
+data.setCell(2, 2, 'testscript.Itemfamily')
+data.setCell(2, 3, 90339);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'itemFamilydelete')
+data.setCell(3, 2, 'testscript.Itemfamily')
+data.setCell(3, 3, 27123);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'itemclassedit')
+data.setCell(4, 2, 'testscript.Itemclass')
+data.setCell(4, 3, 17805);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'itemclassdelete')
+data.setCell(5, 2, 'testscript.Itemclass')
+data.setCell(5, 3, 1344);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validlogin')
+data.setCell(6, 2, 'testscript.Login')
+data.setCell(6, 3, 496);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'browseropen')
+data.setCell(7, 2, 'testscript.Login')
+data.setCell(7, 3, 128);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 48 seconds</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -249,9 +376,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">7 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testscript.Itemfamily</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportSetup</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">reportgeneration</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">testscript.Itemclass</span>
               <div class="ignored-methods-div">
@@ -285,29 +423,54 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">335 ms</span>
+                <span class="method-start">332 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">browseropen</span>
-                <span class="method-start">5815 ms</span>
+                <span class="method-start">6622 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validlogin</span>
-                <span class="method-start">5927 ms</span>
+                <span class="method-start">6752 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.Itemclass</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">itemclassscript</span>
-                <span class="method-start">6412 ms</span>
+                <span class="method-start">7252 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">itemclassedit</span>
+                <span class="method-start">99564 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">itemclassdelete</span>
+                <span class="method-start">117370 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.Itemfamily</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">itemfamilyscript</span>
+                <span class="method-start">118721 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">itemFamilyedit</span>
+                <span class="method-start">241122 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">itemFamilydelete</span>
+                <span class="method-start">331465 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.Login</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">reportgeneration</span>
-                <span class="method-start">54526 ms</span>
+                <span class="method-start">358591 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
