@@ -5,6 +5,7 @@
     <classes>
       <class name="testscript.Login"/>
       <class name="testscript.Itemclass"/>
+      <class name="testscript.Itemfamily"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
