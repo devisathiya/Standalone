@@ -26,7 +26,7 @@ public class Baseclass extends Browsersetup {
 	
 	
 	@BeforeTest
-	public void setup() {
+	public static void setup() {
 		setProperties();
 		
 		Browsersetup.StartBrowser();

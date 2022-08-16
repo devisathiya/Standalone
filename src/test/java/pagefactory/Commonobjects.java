@@ -5,9 +5,9 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Common_objects {
+public class Commonobjects {
 
-	@FindBy(xpath="//div[@class='topbarMenu']/img[@id='topMenu']")
+	@FindBy(xpath="//div[@class='topbarMenu topbarcolor']/img[@id='topMenu']")
 	public static WebElement sidemenuclick;
 	
 	@FindBy(xpath="//div[contains(@class, 'userMenu p-panelmenu p-component')]"
@@ -35,7 +35,7 @@ public class Common_objects {
 	@FindBy(xpath="//div[contains(@class,'errorMessage ')]/div[2]")
 	public static WebElement msgdetails;
 	
-	@FindBy(xpath="//div[contains(@class,'session p-dialog p-dynamic-dialog p-component ng-star-inserted')]/div[2]/app-confirmation-popup/p")
+	@FindBy(xpath="//div[contains(@class,' p-dialog p-dynamic-dialog p-component ng-star-inserted')]/div[2]/app-confirmation-popup/p")
 	public static WebElement deletepopupmsg;
 	
 	@FindBy(xpath="//div[2]/app-confirmation-popup/div/button[2]")
@@ -43,9 +43,9 @@ public class Common_objects {
 	
 	
 	public static void search(String code) {
-		Common_objects.searchvalue.clear();
-		Common_objects.searchvalue.sendKeys(code);
-		Common_objects.searchicon.click();
+		Commonobjects.searchvalue.clear();
+		Commonobjects.searchvalue.sendKeys(code);
+		Commonobjects.searchicon.click();
 	}
 	
 }

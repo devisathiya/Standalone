@@ -31,7 +31,7 @@ public class SetUp {
 	public static String fileWithPath;
 	
 
-	public void setProperties() {
+	public static void setProperties() {
 		prop = new Properties();
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
 		InputStream stream = loader.getResourceAsStream("config.properties");
@@ -44,7 +44,7 @@ public class SetUp {
 		//property=prop.getProperty("key");
 	}
 
-	public void databaseConnection() {
+	public static void databaseConnection() {
 		try {
 			DriverManagerDataSource dataSource = new DriverManagerDataSource();
 			dataSource.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
