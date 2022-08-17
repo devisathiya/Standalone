@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class Common_objects {
 
-	@FindBy(xpath="//div[@class='topbarMenu']/img[@id='topMenu']")
+	@FindBy(xpath="//div[@class='topbarMenu topbarcolor']/img[@id='topMenu']")
 	public static WebElement sidemenuclick;
 	
 	@FindBy(xpath="//div[contains(@class, 'userMenu p-panelmenu p-component')]"
