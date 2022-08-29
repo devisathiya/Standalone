@@ -20,5 +20,8 @@ public class NotesManagementObjects {
 	@FindBy(xpath = "//div[contains(@class, 'formContainer')]/p-togglebutton/div")
 	public static WebElement togglebtn;
 	
+	@FindBy(xpath = "//div[contains(@class, 'p-dialog-content ng-tns')]/app-addoredit-table/div/h4")
+	public static WebElement tableheader;
+	
 	
 }
