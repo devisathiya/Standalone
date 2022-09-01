@@ -4,10 +4,12 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="testscript.Login"/>
-       <class name="testscript.Subcards"/>
+       <class name="testscript.User"/>
     
       <!-- <class name="testscript.Itemfamily"/>
+      <class name="testscript.Userrole"/>
       <class name="testscript.Itemclass"/>
+        <class name="testscript.Subcards"/>
       <class name="testscript.Notes"/>
       <class name="testscript.Units"/>
       <class name="testscript.Unitchain"/> -->

@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="7" total="15" passed="7" failed="1" skipped="0">
+<testng-results ignored="4" total="7" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-02T10:50:38Z" name="Suite" finished-at="2022-08-02T10:56:37Z" duration-ms="358653">
+  <suite started-at="2022-09-01T09:27:59Z" name="Suite" finished-at="2022-09-01T09:28:09Z" duration-ms="9606">
     <groups>
     </groups>
-    <test started-at="2022-08-02T10:50:38Z" name="Test" finished-at="2022-08-02T10:56:37Z" duration-ms="358653">
-      <class name="testscript.Itemclass">
-        <test-method signature="itemclassscript()[pri:0, instance:testscript.Itemclass@600b90df]" started-at="2022-08-02T10:50:45Z" name="itemclassscript" finished-at="2022-08-02T10:52:18Z" duration-ms="92306" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- itemclassscript -->
-        <test-method signature="itemclassedit()[pri:0, instance:testscript.Itemclass@600b90df]" started-at="2022-08-02T10:52:18Z" name="itemclassedit" finished-at="2022-08-02T10:52:35Z" depends-on-methods="testscript.Itemclass.itemclassscript" duration-ms="17805" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- itemclassedit -->
-        <test-method signature="itemclassdelete()[pri:0, instance:testscript.Itemclass@600b90df]" started-at="2022-08-02T10:52:35Z" name="itemclassdelete" finished-at="2022-08-02T10:52:37Z" depends-on-methods="testscript.Itemclass.itemclassedit" duration-ms="1344" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+    <test started-at="2022-09-01T09:27:59Z" name="Test" finished-at="2022-09-01T09:28:09Z" duration-ms="9606">
+      <class name="testscript.User">
+        <test-method signature="userscript()[pri:0, instance:testscript.User@60129b9a]" started-at="2022-09-01T09:28:05Z" name="userscript" finished-at="2022-09-01T09:28:08Z" duration-ms="3473" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[element click intercepted: Element <span _ngcontent-xwo-c144="" class="searchIcon">...</span> is not clickable at point (1014, 178). Other element would receive the click: <div class="ng-tns-c14-22 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker" style="z-index: 1100;">...</div>
-  (Session info: chrome=103.0.5060.134)
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
 System info: host: 'TBS-25', ip: '192.168.200.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d2de39dada9de0eac0473364fc62fc48]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5d8c5dfd6ead2e66e50f202a3f288c5]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span _ngcontent-xwo-c144="" class="searchIcon">...</span> is not clickable at point (1014, 178). Other element would receive the click: <div class="ng-tns-c14-22 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker" style="z-index: 1100;">...</div>
-  (Session info: chrome=103.0.5060.134)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
 System info: host: 'TBS-25', ip: '192.168.200.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d2de39dada9de0eac0473364fc62fc48
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5d8c5dfd6ead2e66e50f202a3f288c5
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -46,15 +40,9 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at pagefactory.Common_objects.search(Common_objects.java:48)
-at testscript.Itemclass.itemclassdelete(Itemclass.java:64)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:173)
+at pagefactory.UserManagementObjects.employeeselect(UserManagementObjects.java:102)
+at testscript.User.userscript(User.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -82,43 +70,29 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- itemclassdelete -->
-      </class> <!-- testscript.Itemclass -->
-      <class name="testscript.Itemfamily">
-        <test-method signature="itemfamilyscript()[pri:0, instance:testscript.Itemfamily@7c8c9a05]" started-at="2022-08-02T10:52:37Z" name="itemfamilyscript" finished-at="2022-08-02T10:54:39Z" duration-ms="122397" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- itemfamilyscript -->
-        <test-method signature="itemFamilyedit()[pri:1, instance:testscript.Itemfamily@7c8c9a05]" started-at="2022-08-02T10:54:39Z" name="itemFamilyedit" finished-at="2022-08-02T10:56:09Z" duration-ms="90339" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- itemFamilyedit -->
-        <test-method signature="itemFamilydelete()[pri:2, instance:testscript.Itemfamily@7c8c9a05]" started-at="2022-08-02T10:56:09Z" name="itemFamilydelete" finished-at="2022-08-02T10:56:37Z" duration-ms="27123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- itemFamilydelete -->
-      </class> <!-- testscript.Itemfamily -->
+        </test-method> <!-- userscript -->
+      </class> <!-- testscript.User -->
       <class name="testscript.Login">
-        <test-method is-config="true" signature="reportSetup()[pri:0, instance:testscript.Login@26ceffa8]" started-at="2022-08-02T10:50:38Z" name="reportSetup" finished-at="2022-08-02T10:50:38Z" duration-ms="330" status="PASS">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:testscript.Login@5c2375a9]" started-at="2022-09-01T09:27:59Z" name="reportSetup" finished-at="2022-09-01T09:27:59Z" duration-ms="340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportSetup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testscript.Login@26ceffa8]" started-at="2022-08-02T10:50:38Z" name="setup" finished-at="2022-08-02T10:50:45Z" duration-ms="6274" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testscript.Login@5c2375a9]" started-at="2022-09-01T09:27:59Z" name="setup" finished-at="2022-09-01T09:28:04Z" duration-ms="5249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="browseropen()[pri:0, instance:testscript.Login@26ceffa8]" started-at="2022-08-02T10:50:45Z" name="browseropen" finished-at="2022-08-02T10:50:45Z" duration-ms="128" status="PASS">
+        <test-method signature="browseropen()[pri:0, instance:testscript.Login@5c2375a9]" started-at="2022-09-01T09:28:04Z" name="browseropen" finished-at="2022-09-01T09:28:05Z" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browseropen -->
-        <test-method signature="validlogin()[pri:0, instance:testscript.Login@26ceffa8]" started-at="2022-08-02T10:50:45Z" name="validlogin" finished-at="2022-08-02T10:50:45Z" duration-ms="496" status="PASS">
+        <test-method signature="validlogin()[pri:0, instance:testscript.Login@5c2375a9]" started-at="2022-09-01T09:28:05Z" name="validlogin" finished-at="2022-09-01T09:28:05Z" duration-ms="445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validlogin -->
-        <test-method is-config="true" signature="reportgeneration()[pri:0, instance:testscript.Login@26ceffa8]" started-at="2022-08-02T10:56:37Z" name="reportgeneration" finished-at="2022-08-02T10:56:37Z" duration-ms="392" status="PASS">
+        <test-method is-config="true" signature="reportgeneration()[pri:0, instance:testscript.Login@5c2375a9]" started-at="2022-09-01T09:28:08Z" name="reportgeneration" finished-at="2022-09-01T09:28:09Z" duration-ms="373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportgeneration -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 02 16:20:38 IST 2022</td>
+<td>Started on:</td><td>Thu Sep 01 14:57:59 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>358 seconds (358653 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9606 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testscript.Itemclass.itemclassdelete()'><b>itemclassdelete</b><br>Test class: testscript.Itemclass</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span _ngcontent-xwo-c144=&quot;&quot; class=&quot;searchIcon&quot;&gt;...&lt;/span&gt; is not clickable at point (1014, 178). Other element would receive the click: &lt;div class=&quot;ng-tns-c14-22 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker&quot; style=&quot;z-index: 1100;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=103.0.5060.134)
+<td title='testscript.User.userscript()'><b>userscript</b><br>Test class: testscript.User</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;4.0.0-alpha-2&apos;, revision: &apos;f148142cf8&apos;, time: &apos;2019-07-01T20:55:26&apos;
 System info: host: &apos;TBS-25&apos;, ip: &apos;192.168.200.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d2de39dada9de0eac0473364fc62fc48
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5d8c5dfd6ead2e66e50f202a3f288c5
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -90,19 +91,18 @@ Session ID: d2de39dada9de0eac0473364fc62fc48
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at pagefactory.Common_objects.search(Common_objects.java:48)
-	at testscript.Itemclass.itemclassdelete(Itemclass.java:64)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1286771084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1286771084'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span _ngcontent-xwo-c144=&quot;&quot; class=&quot;searchIcon&quot;&gt;...&lt;/span&gt; is not clickable at point (1014, 178). Other element would receive the click: &lt;div class=&quot;ng-tns-c14-22 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker&quot; style=&quot;z-index: 1100;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=103.0.5060.134)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:173)
+	at pagefactory.UserManagementObjects.employeeselect(UserManagementObjects.java:102)
+	at testscript.User.userscript(User.java:55)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace431939256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace431939256'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;4.0.0-alpha-2&apos;, revision: &apos;f148142cf8&apos;, time: &apos;2019-07-01T20:55:26&apos;
 System info: host: &apos;TBS-25&apos;, ip: &apos;192.168.200.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d2de39dada9de0eac0473364fc62fc48
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5d8c5dfd6ead2e66e50f202a3f288c5
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -115,15 +115,9 @@ Session ID: d2de39dada9de0eac0473364fc62fc48
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-	at pagefactory.Common_objects.search(Common_objects.java:48)
-	at testscript.Itemclass.itemclassdelete(Itemclass.java:64)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:173)
+	at pagefactory.UserManagementObjects.employeeselect(UserManagementObjects.java:102)
+	at testscript.User.userscript(User.java:55)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -150,8 +144,8 @@ Session ID: d2de39dada9de0eac0473364fc62fc48
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>testscript.Itemclass@600b90df</td></tr>
+<td>3</td>
+<td>testscript.User@60129b9a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -164,37 +158,12 @@ Session ID: d2de39dada9de0eac0473364fc62fc48
 <td title='testscript.Login.browseropen()'><b>browseropen</b><br>Test class: testscript.Login</td>
 <td></td>
 <td>0</td>
-<td>testscript.Login@26ceffa8</td></tr>
-<tr>
-<td title='testscript.Itemfamily.itemFamilydelete()'><b>itemFamilydelete</b><br>Test class: testscript.Itemfamily</td>
-<td></td>
-<td>27</td>
-<td>testscript.Itemfamily@7c8c9a05</td></tr>
-<tr>
-<td title='testscript.Itemfamily.itemFamilyedit()'><b>itemFamilyedit</b><br>Test class: testscript.Itemfamily</td>
-<td></td>
-<td>90</td>
-<td>testscript.Itemfamily@7c8c9a05</td></tr>
-<tr>
-<td title='testscript.Itemclass.itemclassedit()'><b>itemclassedit</b><br>Test class: testscript.Itemclass</td>
-<td></td>
-<td>17</td>
-<td>testscript.Itemclass@600b90df</td></tr>
-<tr>
-<td title='testscript.Itemclass.itemclassscript()'><b>itemclassscript</b><br>Test class: testscript.Itemclass</td>
-<td></td>
-<td>92</td>
-<td>testscript.Itemclass@600b90df</td></tr>
-<tr>
-<td title='testscript.Itemfamily.itemfamilyscript()'><b>itemfamilyscript</b><br>Test class: testscript.Itemfamily</td>
-<td></td>
-<td>122</td>
-<td>testscript.Itemfamily@7c8c9a05</td></tr>
+<td>testscript.Login@5c2375a9</td></tr>
 <tr>
 <td title='testscript.Login.validlogin()'><b>validlogin</b><br>Test class: testscript.Login</td>
 <td></td>
 <td>0</td>
-<td>testscript.Login@26ceffa8</td></tr>
+<td>testscript.Login@5c2375a9</td></tr>
 </table><p>
 </body>
 </html>
