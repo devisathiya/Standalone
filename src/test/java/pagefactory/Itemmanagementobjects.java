@@ -74,7 +74,20 @@ public class Itemmanagementobjects extends Baseclass {
 
 	@FindBy(xpath = "//div/table/tbody/tr/td[6]/span[@class='ng-star-inserted']/img[@src='assets/icons/delete.svg']")
 	public static WebElement chaindeleteicon;
+	
+	/*#######################################################
+	
+					Main menu and sub menu
+	########################################################*/
+	@FindBy(xpath = "//div[contains(@class,'itemList mainMenu ')]/div/span")
+	public static WebElement addheader;
 
+	@FindBy(xpath = "//*[@id='pr_id_10-table']/tbody/tr[1]/td[5]/span[@class='ng-star-inserted']/img[1]")
+	public static WebElement editbtn;
+
+	@FindBy(xpath = "//*[@id='pr_id_10-table']/tbody/tr[1]/td[5]/span[@class='ng-star-inserted']/img[2]")
+	public static WebElement deletebtn;
+	
 	public static void itemaddedit(String code, String descE, String descA) {
 		Itemmanagementobjects.classcode.sendKeys(code);
 		Itemmanagementobjects.classdescE.sendKeys(descE);
@@ -89,7 +102,19 @@ public class Itemmanagementobjects extends Baseclass {
 		Itemmanagementobjects.classsavebtn.click();
 
 	}
+	public static void submenuaddedit(String code, String descE, String descA) {
+		Itemmanagementobjects.classcode.sendKeys(code);
+		Itemmanagementobjects.classdescE.sendKeys(descE);
+		Itemmanagementobjects.classdescA.sendKeys(descA);
+		Itemmanagementobjects.classsavebtn.click();
 
+	}
+	public static void submenuaddedit(String descE, String descA) {
+		Itemmanagementobjects.classdescE.sendKeys(descE);
+		Itemmanagementobjects.classdescA.sendKeys(descA);
+		Itemmanagementobjects.classsavebtn.click();
+
+	}
 	public static void itemaddedit(String code, String unitchainnameE, String unitchainnameA, String descriptionE,
 			String descriptionA) {
 		Itemmanagementobjects.classcode.sendKeys(code);
