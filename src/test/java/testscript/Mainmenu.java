@@ -1,3 +1,4 @@
+
 package testscript;
 
 import org.openqa.selenium.support.PageFactory;
@@ -17,7 +18,7 @@ public class Mainmenu extends Baseclass {
 
 	public void mainmenuadd() {
 		PageFactory.initElements(driver, Itemmanagement_objects.class);
-		Common_class.testobjects(menuname,submenuname);
+		Commonclass.testobjects(menuname,submenuname);
 		System.out.println("Main Menu  selected through common script");
 		Common_objects.addbtn.click();
 		
@@ -64,3 +65,5 @@ public class Mainmenu extends Baseclass {
 	} 
 
 }
+
+
