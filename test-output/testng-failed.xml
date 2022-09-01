@@ -3,6 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+
+      <class name="testscript.User">
+        <methods>
+          <include name="reportSetup"/>
+          <include name="userscript"/>
+          <include name="setup"/>
+          <include name="reportgeneration"/>
+        </methods>
+      </class> <!-- testscript.User -->
+
       <class name="testscript.Submenu">
         <methods>
           <include name="reportSetup"/>
@@ -13,6 +23,7 @@
           <include name="reportgeneration"/>
         </methods>
       </class> <!-- testscript.Submenu -->
+
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
